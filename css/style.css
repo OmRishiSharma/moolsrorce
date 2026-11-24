@@ -211,8 +211,8 @@ html.gl-ready .hero__map { opacity: 0; }
 
 /* ---------- About ---------- */
 .about { padding-block: var(--section); }
-.about__grid { display: grid; gap: var(--s7); }
-.about__fig { position: relative; }
+.about__grid { display: grid; gap: var(--s7); align-items: start; }
+.about__fig { position: relative; margin: 0; align-self: start; }
 [data-mask] picture { display: block; overflow: hidden; border-radius: var(--r-lg); background: var(--forest); }
 .mask-img { width: 100%; height: auto; object-fit: cover; display: block; }
 figcaption { font: 400 var(--fs-xs)/1.5 var(--font-mono); letter-spacing: .02em; color: var(--on-dark-2); margin-top: var(--s3); max-width: 46ch; }
@@ -221,7 +221,8 @@ figcaption { font: 400 var(--fs-xs)/1.5 var(--font-mono); letter-spacing: .02em;
 .entry__dev { font: 500 var(--fs-2)/1 "Noto Serif Devanagari", serif; color: var(--ochre-lt); }
 .entry__pos { font: italic 400 var(--fs-sm) var(--font-display); }
 .entry__def { font-size: var(--fs-1); color: var(--cream); }
-.about h2 { margin-bottom: var(--s6); }
+.about__copy { padding-top: 0; align-self: start; }
+.about h2 { margin-bottom: var(--s6); margin-top: 0; }
 .about p.big { font-size: var(--fs-1); line-height: 1.5; color: var(--cream); max-width: 40ch; margin-bottom: var(--s5); }
 .about__copy p:not(.entry):not(.big) { color: var(--on-dark-2); max-width: 46ch; }
 .approach { margin-top: var(--s9); display: grid; gap: var(--s8); }
@@ -230,6 +231,7 @@ figcaption { font: 400 var(--fs-xs)/1.5 var(--font-mono); letter-spacing: .02em;
 .approach__n { font: 500 var(--fs-xs) var(--font-mono); letter-spacing: .16em; color: var(--ochre-lt); }
 .approach__list h3 { margin: var(--s4) 0 var(--s3); }
 .approach__list p { color: var(--on-dark-2); max-width: 34ch; }
+.regions-wrap .eyebrow { margin-bottom: var(--s4); color: var(--ochre-lt); }
 .regions { width: 100%; border-collapse: collapse; font-size: .95rem; }
 .regions th, .regions td { text-align: left; padding: .85rem 0; border-bottom: 1px solid var(--line-dark); vertical-align: top; }
 .regions thead th { font: 500 var(--fs-xs) var(--font-mono); letter-spacing: .16em; text-transform: uppercase; color: var(--ochre-lt); }
